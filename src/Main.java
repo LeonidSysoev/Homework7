@@ -1,10 +1,11 @@
-
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
+        task4();
 
     }
 
@@ -70,4 +71,15 @@ public class Main {
             System.out.printf(arrayC[i] + ", ");
         }
     }
+    public static void task4() {
+        System.out.println("Задача 4");
+        int[] arrayA = new int[]{1, 2, 3};
+        for (int i = 0; i < arrayA.length; i++) {
+            if (arrayA[i] % 2 != 0) {
+                arrayA[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(arrayA));
+    }
+
 }
